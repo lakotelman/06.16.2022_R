@@ -27,7 +27,7 @@ class Word:
             if letter in guessed_letters:
                 hidden_word += letter
             elif letter == " ": 
-                hidden_word += "  "
+                hidden_word += "   "
             elif letter not in guessed_letters: 
                 hidden_word += "_ "
         print(hidden_word)
@@ -109,7 +109,7 @@ def game():
             
 #TODO: Maybe someday I'll get some Ascii characters to show a hangman
 class Interface: 
-    def __init__ (self):
+    def __init__ (self,):
         pass
 
 game()

@@ -1,7 +1,6 @@
 
 
 import random
-from re import M
 from words import food_and_beverage, coding_temple, animals
 import asciart
 import os
@@ -89,6 +88,7 @@ class Session:
         self.wrong_guess_bank.append(self.guess)
         if self.wrong_guesses== 0: 
             print(asciart.died)
+            print(f"The word was: {self.sessionword.hangword}")
         else:
             Opening.heading()
             print(f"\n---------------\nNope. [{self.guess}] isn't in your word")  
